@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ver="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.dalimao.corelibrary.VerificationCodeInput
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorbackground"
+            ver:box="6"
+            ver:child_h_padding="5dp"
+            ver:inputType="password"
+            android:id="@+id/opendoorkey"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+    />
+    <Button
+            android:id="@+id/opendoorsubmit"
+            android:text="确认"
+            android:background="@color/colorbackground"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/opendoorkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:id="@+id/crashhandler"
+            android:text="错误报告"
+            android:background="@color/colorbackground"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>
